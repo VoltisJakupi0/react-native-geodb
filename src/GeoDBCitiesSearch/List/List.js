@@ -154,7 +154,7 @@ export default class List extends React.Component {
             colors={colors}
             progressViewOffset={this.props.progressViewOffset}
           />}
-          data={this.state.value?.length > 1 this.state.data ? 0}
+          data={this.state.value?.length > 1 ? this.state.data : 0}
           ListEmptyComponent={this._renderEmpty}
           ItemSeparatorComponent={this._renderSeparator}
           ListFooterComponent={hidePoweredBy ? undefined : this._renderFooter}
